@@ -1,9 +1,9 @@
 <h1 align="center">Pi05 × MuJoCo</h1>
 
-<p align="center"><strong>Language-Guided Pick-and-Place with π0.5</strong></p>
+<h3 align="center">Language-Guided Pick-and-Place with π0.5</h3>
 
 <p align="center">
-  <a href="readme.md">English</a> · <a href="readme_zh.md">简体中文</a>
+  <a href="readme.md">English</a> · 简体中文</a>
 </p>
 
 <p align="center">
