@@ -7,8 +7,8 @@
 </p>
 
 <p align="center">
-  <a href="https://huggingface.co/Metroooooooo/pi05_fr3_finetuned_12k">🤗 π0.5_finetuned</a> ·
-  <a href="https://huggingface.co/datasets/Metroooooooo/fr3-pick-place-dataset">🤗 Dataset</a>
+  🤗<a href="https://huggingface.co/Metroooooooo/pi05_fr3_finetuned_12k"> π0.5_Finetuned</a> |
+  🤗<a href="https://huggingface.co/datasets/Metroooooooo/fr3-pick-place-dataset"> Dataset</a>
 </p>
 
 <a id="overview"></a>
@@ -232,7 +232,7 @@ Hugging Face repositories for the **12k-step fine-tuned model** and the dataset 
 
 | Artifact | Hugging Face link |
 | --- | --- |
-| π0.5_finetuned | [Model](https://huggingface.co/Metroooooooo/pi05_fr3_finetuned_12k) |
+| π0.5_Finetuned | [Model](https://huggingface.co/Metroooooooo/pi05_fr3_finetuned_12k) |
 | Dataset | [Dataset](https://huggingface.co/datasets/Metroooooooo/fr3-pick-place-dataset) |
 
 <a id="deploy-pi05"></a>
