@@ -1,0 +1,151 @@
+{
+    "codebase_version": "v3.0",
+    "fps": 20,
+    "features": {
+        "observation.images.agentview": {
+            "dtype": "video",
+            "shape": [
+                256,
+                256,
+                3
+            ],
+            "names": [
+                "height",
+                "width",
+                "channels"
+            ],
+            "info": {
+                "video.height": 256,
+                "video.width": 256,
+                "video.codec": "av1",
+                "video.pix_fmt": "yuv420p",
+                "video.fps": 20,
+                "video.channels": 3,
+                "has_audio": false,
+                "video.g": 2,
+                "video.crf": 30,
+                "video.preset": 12,
+                "video.fast_decode": 0,
+                "video.video_backend": "pyav",
+                "video.extra_options": {},
+                "is_depth_map": false
+            }
+        },
+        "observation.images.wrist": {
+            "dtype": "video",
+            "shape": [
+                256,
+                256,
+                3
+            ],
+            "names": [
+                "height",
+                "width",
+                "channels"
+            ],
+            "info": {
+                "video.height": 256,
+                "video.width": 256,
+                "video.codec": "av1",
+                "video.pix_fmt": "yuv420p",
+                "video.fps": 20,
+                "video.channels": 3,
+                "has_audio": false,
+                "video.g": 2,
+                "video.crf": 30,
+                "video.preset": 12,
+                "video.fast_decode": 0,
+                "video.video_backend": "pyav",
+                "video.extra_options": {},
+                "is_depth_map": false
+            }
+        },
+        "observation.state": {
+            "dtype": "float32",
+            "shape": [
+                7
+            ],
+            "names": [
+                "fr3_joint1",
+                "fr3_joint2",
+                "fr3_joint3",
+                "fr3_joint4",
+                "fr3_joint5",
+                "fr3_joint6",
+                "fr3_joint7"
+            ]
+        },
+        "action": {
+            "dtype": "float32",
+            "shape": [
+                8
+            ],
+            "names": [
+                "fr3_joint1",
+                "fr3_joint2",
+                "fr3_joint3",
+                "fr3_joint4",
+                "fr3_joint5",
+                "fr3_joint6",
+                "fr3_joint7",
+                "gripper_closure"
+            ]
+        },
+        "obj_init": {
+            "dtype": "float32",
+            "shape": [
+                14
+            ],
+            "names": [
+                "obj_init"
+            ]
+        },
+        "timestamp": {
+            "dtype": "float32",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "frame_index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "episode_index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "task_index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        }
+    },
+    "total_episodes": 1,
+    "total_frames": 206,
+    "total_tasks": 1,
+    "chunks_size": 1000,
+    "data_files_size_in_mb": 100,
+    "video_files_size_in_mb": 200,
+    "data_path": "data/chunk-{chunk_index:03d}/file-{file_index:03d}.parquet",
+    "video_path": "videos/{video_key}/chunk-{chunk_index:03d}/file-{file_index:03d}.mp4",
+    "robot_type": "franka_fr3",
+    "splits": {
+        "train": "0:1"
+    }
+}

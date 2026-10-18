@@ -1,0 +1,655 @@
+{
+  "deployment": [
+    {
+      "step": 0,
+      "run": "deploy_base",
+      "total": {
+        "runs": 40,
+        "success": 0,
+        "success_rate": 0.0
+      },
+      "tasks": {
+        "Put the apple in the basket.": {
+          "runs": 10,
+          "success": 0,
+          "success_rate": 0.0,
+          "avg_steps": 1000.0
+        },
+        "Put the green mug in the basket.": {
+          "runs": 10,
+          "success": 0,
+          "success_rate": 0.0,
+          "avg_steps": 1000.0
+        },
+        "Put the apple and the green mug in the basket.": {
+          "runs": 20,
+          "success": 0,
+          "success_rate": 0.0,
+          "avg_steps": 1500.0
+        }
+      },
+      "protocol": {
+        "n_per_task": 10,
+        "max_steps": 1000,
+        "fps": 20,
+        "seed": 100,
+        "tasks": {
+          "Put the apple in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the green mug in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the apple and the green mug in the basket.": {
+            "runs": 20,
+            "max_steps": 1500
+          }
+        }
+      }
+    },
+    {
+      "step": 2000,
+      "run": "deploy_finetuned_2k",
+      "total": {
+        "runs": 40,
+        "success": 22,
+        "success_rate": 0.55
+      },
+      "tasks": {
+        "Put the apple in the basket.": {
+          "runs": 10,
+          "success": 7,
+          "success_rate": 0.7,
+          "avg_steps": 539.6
+        },
+        "Put the green mug in the basket.": {
+          "runs": 10,
+          "success": 4,
+          "success_rate": 0.4,
+          "avg_steps": 791.2
+        },
+        "Put the apple and the green mug in the basket.": {
+          "runs": 20,
+          "success": 11,
+          "success_rate": 0.55,
+          "avg_steps": 1109.9
+        }
+      },
+      "protocol": {
+        "n_per_task": 10,
+        "max_steps": 1000,
+        "fps": 20,
+        "seed": 100,
+        "tasks": {
+          "Put the apple in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the green mug in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the apple and the green mug in the basket.": {
+            "runs": 20,
+            "max_steps": 1500
+          }
+        }
+      }
+    },
+    {
+      "step": 4000,
+      "run": "deploy_finetuned_4k",
+      "total": {
+        "runs": 40,
+        "success": 32,
+        "success_rate": 0.8
+      },
+      "tasks": {
+        "Put the apple in the basket.": {
+          "runs": 10,
+          "success": 7,
+          "success_rate": 0.7,
+          "avg_steps": 589.8
+        },
+        "Put the green mug in the basket.": {
+          "runs": 10,
+          "success": 10,
+          "success_rate": 1.0,
+          "avg_steps": 311.4
+        },
+        "Put the apple and the green mug in the basket.": {
+          "runs": 20,
+          "success": 15,
+          "success_rate": 0.75,
+          "avg_steps": 910.55
+        }
+      },
+      "protocol": {
+        "n_per_task": 10,
+        "max_steps": 1000,
+        "fps": 20,
+        "seed": 100,
+        "tasks": {
+          "Put the apple in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the green mug in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the apple and the green mug in the basket.": {
+            "runs": 20,
+            "max_steps": 1500
+          }
+        }
+      }
+    },
+    {
+      "step": 6000,
+      "run": "deploy_finetuned_6k",
+      "total": {
+        "runs": 40,
+        "success": 32,
+        "success_rate": 0.8
+      },
+      "tasks": {
+        "Put the apple in the basket.": {
+          "runs": 10,
+          "success": 10,
+          "success_rate": 1.0,
+          "avg_steps": 339.7
+        },
+        "Put the green mug in the basket.": {
+          "runs": 10,
+          "success": 10,
+          "success_rate": 1.0,
+          "avg_steps": 268.9
+        },
+        "Put the apple and the green mug in the basket.": {
+          "runs": 20,
+          "success": 12,
+          "success_rate": 0.6,
+          "avg_steps": 978.3
+        }
+      },
+      "protocol": {
+        "n_per_task": 10,
+        "max_steps": 1000,
+        "fps": 20,
+        "seed": 100,
+        "tasks": {
+          "Put the apple in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the green mug in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the apple and the green mug in the basket.": {
+            "runs": 20,
+            "max_steps": 1500
+          }
+        }
+      }
+    },
+    {
+      "step": 8000,
+      "run": "deploy_finetuned_8k",
+      "total": {
+        "runs": 40,
+        "success": 35,
+        "success_rate": 0.875
+      },
+      "tasks": {
+        "Put the apple in the basket.": {
+          "runs": 10,
+          "success": 9,
+          "success_rate": 0.9,
+          "avg_steps": 316.9
+        },
+        "Put the green mug in the basket.": {
+          "runs": 10,
+          "success": 9,
+          "success_rate": 0.9,
+          "avg_steps": 381.4
+        },
+        "Put the apple and the green mug in the basket.": {
+          "runs": 20,
+          "success": 17,
+          "success_rate": 0.85,
+          "avg_steps": 720.15
+        }
+      },
+      "protocol": {
+        "n_per_task": 10,
+        "max_steps": 1000,
+        "fps": 20,
+        "seed": 100,
+        "tasks": {
+          "Put the apple in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the green mug in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the apple and the green mug in the basket.": {
+            "runs": 20,
+            "max_steps": 1500
+          }
+        }
+      }
+    },
+    {
+      "step": 10000,
+      "run": "deploy_finetuned_10k",
+      "total": {
+        "runs": 40,
+        "success": 36,
+        "success_rate": 0.9
+      },
+      "tasks": {
+        "Put the apple in the basket.": {
+          "runs": 10,
+          "success": 10,
+          "success_rate": 1.0,
+          "avg_steps": 207.9
+        },
+        "Put the green mug in the basket.": {
+          "runs": 10,
+          "success": 10,
+          "success_rate": 1.0,
+          "avg_steps": 250.9
+        },
+        "Put the apple and the green mug in the basket.": {
+          "runs": 20,
+          "success": 16,
+          "success_rate": 0.8,
+          "avg_steps": 799.0
+        }
+      },
+      "protocol": {
+        "n_per_task": 10,
+        "max_steps": 1000,
+        "fps": 20,
+        "seed": 100,
+        "tasks": {
+          "Put the apple in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the green mug in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the apple and the green mug in the basket.": {
+            "runs": 20,
+            "max_steps": 1500
+          }
+        }
+      }
+    },
+    {
+      "step": 12000,
+      "run": "deploy_finetuned_12k",
+      "total": {
+        "runs": 40,
+        "success": 39,
+        "success_rate": 0.975
+      },
+      "tasks": {
+        "Put the apple in the basket.": {
+          "runs": 10,
+          "success": 10,
+          "success_rate": 1.0,
+          "avg_steps": 223.7
+        },
+        "Put the green mug in the basket.": {
+          "runs": 10,
+          "success": 10,
+          "success_rate": 1.0,
+          "avg_steps": 274.0
+        },
+        "Put the apple and the green mug in the basket.": {
+          "runs": 20,
+          "success": 19,
+          "success_rate": 0.95,
+          "avg_steps": 660.05
+        }
+      },
+      "protocol": {
+        "n_per_task": 10,
+        "max_steps": 1000,
+        "fps": 20,
+        "seed": 100,
+        "tasks": {
+          "Put the apple in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the green mug in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the apple and the green mug in the basket.": {
+            "runs": 20,
+            "max_steps": 1500
+          }
+        }
+      }
+    },
+    {
+      "step": 14000,
+      "run": "deploy_finetuned_14k",
+      "total": {
+        "runs": 40,
+        "success": 34,
+        "success_rate": 0.85
+      },
+      "tasks": {
+        "Put the apple in the basket.": {
+          "runs": 10,
+          "success": 10,
+          "success_rate": 1.0,
+          "avg_steps": 200.1
+        },
+        "Put the green mug in the basket.": {
+          "runs": 10,
+          "success": 8,
+          "success_rate": 0.8,
+          "avg_steps": 402.8
+        },
+        "Put the apple and the green mug in the basket.": {
+          "runs": 20,
+          "success": 16,
+          "success_rate": 0.8,
+          "avg_steps": 838.1
+        }
+      },
+      "protocol": {
+        "n_per_task": 10,
+        "max_steps": 1000,
+        "fps": 20,
+        "seed": 100,
+        "tasks": {
+          "Put the apple in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the green mug in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the apple and the green mug in the basket.": {
+            "runs": 20,
+            "max_steps": 1500
+          }
+        }
+      }
+    },
+    {
+      "step": 16000,
+      "run": "deploy_finetuned_16k",
+      "total": {
+        "runs": 40,
+        "success": 35,
+        "success_rate": 0.875
+      },
+      "tasks": {
+        "Put the apple in the basket.": {
+          "runs": 10,
+          "success": 10,
+          "success_rate": 1.0,
+          "avg_steps": 203.4
+        },
+        "Put the green mug in the basket.": {
+          "runs": 10,
+          "success": 10,
+          "success_rate": 1.0,
+          "avg_steps": 292.9
+        },
+        "Put the apple and the green mug in the basket.": {
+          "runs": 20,
+          "success": 15,
+          "success_rate": 0.75,
+          "avg_steps": 826.9
+        }
+      },
+      "protocol": {
+        "n_per_task": 10,
+        "max_steps": 1000,
+        "fps": 20,
+        "seed": 100,
+        "tasks": {
+          "Put the apple in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the green mug in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the apple and the green mug in the basket.": {
+            "runs": 20,
+            "max_steps": 1500
+          }
+        }
+      }
+    },
+    {
+      "step": 18000,
+      "run": "deploy_finetuned_18k",
+      "total": {
+        "runs": 40,
+        "success": 37,
+        "success_rate": 0.925
+      },
+      "tasks": {
+        "Put the apple in the basket.": {
+          "runs": 10,
+          "success": 10,
+          "success_rate": 1.0,
+          "avg_steps": 205.4
+        },
+        "Put the green mug in the basket.": {
+          "runs": 10,
+          "success": 10,
+          "success_rate": 1.0,
+          "avg_steps": 263.4
+        },
+        "Put the apple and the green mug in the basket.": {
+          "runs": 20,
+          "success": 17,
+          "success_rate": 0.85,
+          "avg_steps": 771.9
+        }
+      },
+      "protocol": {
+        "n_per_task": 10,
+        "max_steps": 1000,
+        "fps": 20,
+        "seed": 100,
+        "tasks": {
+          "Put the apple in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the green mug in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the apple and the green mug in the basket.": {
+            "runs": 20,
+            "max_steps": 1500
+          }
+        }
+      }
+    },
+    {
+      "step": 20000,
+      "run": "deploy_finetuned_20k",
+      "total": {
+        "runs": 40,
+        "success": 36,
+        "success_rate": 0.9
+      },
+      "tasks": {
+        "Put the apple in the basket.": {
+          "runs": 10,
+          "success": 10,
+          "success_rate": 1.0,
+          "avg_steps": 206.8
+        },
+        "Put the green mug in the basket.": {
+          "runs": 10,
+          "success": 9,
+          "success_rate": 0.9,
+          "avg_steps": 350.9
+        },
+        "Put the apple and the green mug in the basket.": {
+          "runs": 20,
+          "success": 17,
+          "success_rate": 0.85,
+          "avg_steps": 731.55
+        }
+      },
+      "protocol": {
+        "n_per_task": 10,
+        "max_steps": 1000,
+        "fps": 20,
+        "seed": 100,
+        "tasks": {
+          "Put the apple in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the green mug in the basket.": {
+            "runs": 10,
+            "max_steps": 1000
+          },
+          "Put the apple and the green mug in the basket.": {
+            "runs": 20,
+            "max_steps": 1500
+          }
+        }
+      }
+    }
+  ],
+  "position_generalization": {
+    "total": {
+      "runs": 40,
+      "success": 32,
+      "success_rate": 0.8
+    },
+    "tasks": {
+      "Put the apple in the basket.": {
+        "runs": 10,
+        "success": 8,
+        "success_rate": 0.8,
+        "avg_steps": 582.4
+      },
+      "Put the green mug in the basket.": {
+        "runs": 10,
+        "success": 10,
+        "success_rate": 1.0,
+        "avg_steps": 432.7
+      },
+      "Put the apple and the green mug in the basket.": {
+        "runs": 20,
+        "success": 14,
+        "success_rate": 0.7,
+        "avg_steps": 1067.0
+      }
+    },
+    "config": {
+      "mode": "pi05",
+      "policy_path": "outputs/train/pi05_fr3_pick_place/checkpoints/012000/pretrained_model",
+      "n_per_task": 10,
+      "max_steps": 2000,
+      "fps": 20,
+      "seed": 100,
+      "tasks": {
+        "Put the apple in the basket.": {
+          "runs": 10,
+          "max_steps": 2000
+        },
+        "Put the green mug in the basket.": {
+          "runs": 10,
+          "max_steps": 2000
+        },
+        "Put the apple and the green mug in the basket.": {
+          "runs": 20,
+          "max_steps": 2000
+        }
+      },
+      "test_layout": {
+        "name": "square_ring",
+        "outer_side_m": 0.15,
+        "rule": "Keep original centers; sample inside the larger square and strictly outside the old square.",
+        "sampling": "Uniform outer-square proposals; reject old-square positions and original spacing violations.",
+        "settling": "Normal placement and settling; resample if final centers leave the square rings or violate spacing.",
+        "regions": {
+          "apple": {
+            "center_xy": [
+              0.195,
+              0.015
+            ],
+            "old_rectangle_xy": [
+              [
+                0.145,
+                0.245
+              ],
+              [
+                -0.035,
+                0.065
+              ]
+            ],
+            "outer_rectangle_xy": [
+              [
+                0.12000000000000001,
+                0.27
+              ],
+              [
+                -0.06,
+                0.09
+              ]
+            ],
+            "outer_side_m": 0.15
+          },
+          "mug_green": {
+            "center_xy": [
+              0.29000000000000004,
+              0.265
+            ],
+            "old_rectangle_xy": [
+              [
+                0.24,
+                0.34
+              ],
+              [
+                0.215,
+                0.315
+              ]
+            ],
+            "outer_rectangle_xy": [
+              [
+                0.21500000000000002,
+                0.36500000000000005
+              ],
+              [
+                0.19,
+                0.34
+              ]
+            ],
+            "outer_side_m": 0.15
+          }
+        }
+      }
+    }
+  }
+}

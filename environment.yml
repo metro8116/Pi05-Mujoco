@@ -1,0 +1,12 @@
+# Optional Conda bootstrap shared by Windows and Linux.
+# Then install requirements.txt (local) or requirements_train.txt (AutoDL).
+name: lerobot_pi05
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+
+# Prevent Windows AppData/Roaming Python packages from leaking into this env.
+variables:
+  PYTHONNOUSERSITE: "1"

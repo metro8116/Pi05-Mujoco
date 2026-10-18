@@ -1,0 +1,17 @@
+<mujoco model="fruit_apple">
+    <!-- Continuous scan-derived apple surface, enlarged 8 percent.
+        Rebuild with tools/rebuild_apple_visual.py.
+        Shared visual/contact mesh; automatically measured spawn height. -->
+    <asset>
+        <texture type="2d" name="fruit_apple_tex" file="textures/apple_albedo.png" />
+        <material name="fruit_apple_mat" texture="fruit_apple_tex" specular="0.35" shininess="0.32" />
+        <mesh name="fruit_apple_vis" file="mesh/apple_closed.obj" smoothnormal="true" />
+    </asset>
+    <worldbody>
+        <body name="body_obj_apple" pos="0.32 0.0 0.81">
+            <freejoint />
+            <inertial pos="0 0 0.0291600" mass="0.055" diaginertia="2.09952e-05 2.09952e-05 2.09952e-05" />
+            <geom name="apple" type="mesh" mesh="fruit_apple_vis" material="fruit_apple_mat" group="2" density="0" condim="4" friction="2.0 3.0 0.1" solimp="0.998 0.998 0.001" solref="0.003 1" />
+        </body>
+    </worldbody>
+</mujoco>

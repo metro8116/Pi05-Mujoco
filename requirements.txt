@@ -1,0 +1,28 @@
+# Shared environment: Windows collection/replay + AutoDL simulation/data.
+# Python 3.12 (64 bit). On AutoDL install requirements_train.txt in ONE command;
+# it includes this file and selects the CUDA 12.8 build of PyTorch.
+# Plain ==2.11.0 also accepts 2.11.0+cpu / 2.11.0+cu128.
+torch==2.11.0
+torchvision==0.26.0
+
+# LeRobot data API only. List PyAV data dependencies explicitly so the local
+# environment does not pull in the optional native TorchCodec backend.
+lerobot==0.6.1
+datasets==4.8.5
+pandas==2.3.3
+pyarrow==26.0.0
+av==15.1.0
+jsonlines==4.0.0
+huggingface-hub==1.33.0
+safetensors==0.8.0
+
+# MuJoCo scene, GLFW keyboard/window, image operations and inverse kinematics.
+mujoco==3.1.6
+glfw==2.10.2
+PyOpenGL==3.1.10
+numpy==2.2.6
+scipy==1.18.1
+pillow==12.3.0
+opencv-python-headless==4.13.0.92
+matplotlib==3.11.2
+PyAutoGUI==0.9.54

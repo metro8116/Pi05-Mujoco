@@ -1,0 +1,35 @@
+<mujoco model="floor and sky">
+
+    <visual>
+        <headlight diffuse="0.25 0.25 0.25" ambient="0.25 0.25 0.25" specular="0.55 0.55 0.55" />
+        <!-- Concentrate shadow detail around the tabletop workspace. -->
+        <map shadowscale="0.28" />
+        <rgba haze="0.15 0.25 0.35 1" />
+    </visual>
+
+    <asset>
+        <!-- Sky -->
+        <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512"
+            height="3072" />
+        <!-- Ground -->
+        <texture type="2d" name="groundplane" builtin="checker" mark="edge" rgb1="0.9 0.9 0.9"
+            rgb2="0.8 0.8 0.8"
+            markrgb="0.8 0.8 0.8" width="1000" height="1000" />
+        <material name="groundplane" texture="groundplane" texuniform="true" texrepeat="1 1"
+            reflectance="0.1" />
+    </asset>
+
+    <worldbody>
+        <light name="table_key" pos="-0.8 -0.6 2.6" dir="0.45 0.35 -1"
+               diffuse="0.40 0.38 0.35" specular="0.75 0.72 0.67"
+               directional="true" castshadow="false" />
+        <light name="table_fill" pos="1 0.8 2.2" dir="-0.4 -0.4 -1"
+               diffuse="0.18 0.21 0.25" specular="0.30 0.32 0.35"
+               directional="true" castshadow="false" />
+        <!-- Overhead shadows ground objects without harsh oblique self-shadowing. -->
+        <light name="table_overhead" pos="0.3 0 2.8" dir="0.02 0.05 -1"
+               diffuse="0.30 0.29 0.27" specular="0.10 0.10 0.10" directional="true" />
+        <geom name="floor" group="1" size="0 0 0.05" type="plane" material="groundplane" />
+    </worldbody>
+
+</mujoco>

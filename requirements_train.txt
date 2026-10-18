@@ -1,0 +1,21 @@
+# AutoDL Linux x86_64 training + deployment. Python 3.12.
+# Includes the shared environment; no need to install it separately first.
+# Ordinary packages use the configured PyPI mirror. The flat wheel mirror
+# supplies the exact CUDA 12.8 builds without needing the overseas index.
+--find-links https://mirrors.aliyun.com/pytorch-wheels/cu128/
+-r requirements.txt
+torch==2.11.0+cu128; sys_platform == "linux"
+torchvision==0.26.0+cu128; sys_platform == "linux"
+
+# Use Pi policy deps plus the explicit PyAV data stack above. The upstream
+# [training] extra also pulls TorchCodec, which these scripts do not use.
+lerobot[pi]==0.6.1
+transformers==5.5.4
+accelerate==1.15.0
+wandb==0.27.2
+sentencepiece==0.2.2
+protobuf==7.36.2
+
+# Deployment MP4 output (not needed by the local data writer, which uses PyAV).
+imageio==2.38.1
+imageio-ffmpeg==0.6.0
