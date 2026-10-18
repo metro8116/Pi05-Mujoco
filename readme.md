@@ -7,8 +7,8 @@
 </p>
 
 <p align="center">
-  🤗 <a href="https://huggingface.co/Metroooooooo/pi05_fr3_finetuned_12k">Model</a> &
-  🤗 <a href="https://huggingface.co/datasets/Metroooooooo/fr3-pick-place-dataset">Dataset</a>
+  🤗 <a href="https://huggingface.co/Metroooooooo/pi05_fr3_finetuned_12k">Model</a> | 
+  <a href="https://huggingface.co/datasets/Metroooooooo/fr3-pick-place-dataset">Dataset</a>
 </p>
 
 <a id="overview"></a>
