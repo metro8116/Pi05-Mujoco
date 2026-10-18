@@ -1,10 +1,15 @@
-# Pi05 × MuJoCo
+<h1 align="center">Pi05 × MuJoCo</h1>
 
-**Language-Guided Pick-and-Place with π0.5**
+<p align="center"><strong>Language-Guided Pick-and-Place with π0.5</strong></p>
 
-[English](readme.md) · [简体中文](readme_zh.md)
+<p align="center">
+  <a href="readme.md">English</a> · <a href="readme_zh.md">简体中文</a>
+</p>
 
-[🤗 π0.5_finetuned](https://huggingface.co/Metroooooooo/pi05_fr3_finetuned_12k) · [🤗 Dataset](https://huggingface.co/datasets/Metroooooooo/fr3-pick-place-dataset)
+<p align="center">
+  <a href="https://huggingface.co/Metroooooooo/pi05_fr3_finetuned_12k">🤗 π0.5_finetuned</a> ·
+  <a href="https://huggingface.co/datasets/Metroooooooo/fr3-pick-place-dataset">🤗 Dataset</a>
+</p>
 
 <a id="overview"></a>
 
