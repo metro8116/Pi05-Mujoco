@@ -42,7 +42,7 @@ The current dataset contains **120 successful demonstrations / 39,747 frames**, 
 <summary>📂 Project structure</summary>
 
 ```text
-mujoco_pick_place_pi05/
+Pi05-Mujoco/
 ├── 1.collect_data_pick_place.py   # Keyboard teleoperation and data collection
 ├── 2.replay_data_pick_place.py    # Replay recorded actions in MuJoCo
 ├── 3.train_pi05.py               # Fine-tune Pi05 with LeRobot
@@ -77,7 +77,7 @@ Use **Python 3.12** for both environments. Collect and replay on a local Windows
 Open **Anaconda Prompt** in the project directory:
 
 ```bat
-cd /d D:\VLA\mujoco_pick_place_pi05
+cd /d D:\VLA\Pi05-Mujoco
 install_local.bat
 conda activate lerobot_pi05
 ```

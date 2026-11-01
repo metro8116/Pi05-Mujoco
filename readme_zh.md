@@ -42,7 +42,7 @@
 <summary>📂 项目结构</summary>
 
 ```text
-mujoco_pick_place_pi05/
+Pi05-Mujoco/
 ├── 1.collect_data_pick_place.py   # 键盘遥操采集
 ├── 2.replay_data_pick_place.py    # 仿真回放
 ├── 3.train_pi05.py               # Pi05微调
@@ -77,7 +77,7 @@ mujoco_pick_place_pi05/
 在项目目录打开 **Anaconda Prompt**：
 
 ```bat
-cd /d D:\VLA\mujoco_pick_place_pi05
+cd /d D:\VLA\Pi05-Mujoco
 install_local.bat
 conda activate lerobot_pi05
 ```
